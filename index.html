@@ -6,13 +6,17 @@
   <title>موقعي</title>
 </head>
 <body>
-  <h1>My website</h1>
-
-  <button>Click me</button>
-
-  <!-- صورة روميتك -->
-  <a href="roommate1.jpg" target="_blank">
-    <img src="roommate1.jpg" alt="روميتي" width="200">
-  </a>
+  <h1>My Website</h1>
+  <button onclick="showImage()">Click me</button>
+  <div id="roommate-img" style="display:none; margin-top:20px;">
+    <a href="roommate1.jpg" target="_blank">
+      <img src="roommate1.jpg" alt="روميتي" width="200">
+    </a>
+  </div>
+  <script>
+    function showImage() {
+      document.getElementById("roommate-img").style.display = "block";
+    }
+  </script>
 </body>
 </html>
